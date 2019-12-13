@@ -1,0 +1,63 @@
+.btn {
+    border-radius: 30px;
+}
+
+.btn-lg {
+    border-radius: 10px;
+}
+
+.img-mini {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.img-jumbo {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.navbar-nav li {
+    margin-right: 0.5em;
+}
+
+#list-dashboard .w-75 {
+    margin-bottom: 0.3em;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-10 {
+    width: 20% !important;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+#navigate .btn-lg {
+    margin-bottom: 0.3em;
+}
+
+.list {
+    width: 120px;
+}
+
+.btn-orange {
+    background-color: tomato;
+    color: white;
+}
+
+.btn-pink {
+    background-color: violet;
+    color: white;
+}
+
+.font-mini {
+    font-size: 0.5em;
+}
+
+.card-body h6 {
+    margin-top: -1em;
+}
