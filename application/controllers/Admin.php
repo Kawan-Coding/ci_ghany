@@ -53,4 +53,15 @@ class Admin extends CI_Controller
 		);
 		$this->load->view('template', array_merge($data, $this->template));
 	}
+	public function profil_admin_edit()
+	{
+		$data = array(
+			'content' => 'content/ap_profil_admin_edit',
+		);
+        $this->load->view('template', array_merge($data,$this->template));
+	}
+	public function Login()
+	{
+        $this->load->view('login');
+	}
 }
