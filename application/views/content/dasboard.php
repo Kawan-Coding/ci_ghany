@@ -1,6 +1,4 @@
-<div class="row">
-    <div class="col-md-8">
-        <div class="btn-lg shadow">
+
             <div class="card-body">
                 <h5 class="card-title">Dashboard</h5>
                 <div class="dropdown-divider"></div>
@@ -162,6 +160,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+      
 

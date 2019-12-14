@@ -24,10 +24,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	?>
 	<br>
 	<section id="content">
-		<?php
-		$this->load->view($content);
-		$this->load->view($sidebar);
-		?>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="btn-lg shadow">
+					<?php
+					$this->load->view($content);
+					?>
+				</div>
+			</div>
+			<?php
+			$this->load->view($sidebar);
+			?>
 	</section>
 	<br><br>
 	<footer class="vw-100 bg-success text-white text-center">Cloud Astro C 2019</footer>
