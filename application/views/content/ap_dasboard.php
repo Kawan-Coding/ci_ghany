@@ -3,13 +3,13 @@
     <div class="dropdown-divider"></div>
     <div class="row">
         <div class="col">
-            <div class="shadow btn-lg">
+            <div class="shadow-sm btn-lg">
                 <div class="card-body">
                     <h6 class="">Pelayanan Permintaan Hari Ini</h6>
                     <div class="text-white" id="list-dashboard">
                         <div>
-                            <span class="btn btn-primary w-70">Unit IT</span>
-                            <span class="btn btn-primary w-10 ml-3">25 </span>
+                            <span class="btn btn-blue w-70">Unit IT</span>
+                            <span class="btn btn-blue w-10 ml-3">25 </span>
                         </div>
                         <div>
                             <span class="btn btn-orange w-70">Unit IPS</span>
@@ -24,13 +24,13 @@
             </div>
         </div>
         <div class="col">
-            <div class="shadow btn-lg">
+            <div class="shadow-sm btn-lg">
                 <div class="card-body">
                     <h6 class="">Penanganan Permintaan Hari Ini</h6>
                     <div class="text-white " id="list-dashboard">
                         <div>
-                            <span class="btn btn-primary w-10 ml-3">25 </span>
-                            <span class="btn btn-primary w-70">Unit IT</span>
+                            <span class="btn btn-blue w-10 ml-3">25 </span>
+                            <span class="btn btn-blue w-70">Unit IT</span>
                         </div>
                         <div>
                             <span class="btn btn-orange w-10 ml-3">25 </span>
@@ -47,7 +47,7 @@
     </div>
 </div>
 <div class="col">
-    <div class="shadow btn-lg mx-1 mb-5">
+    <div class="shadow-sm btn-lg mx-1 mb-5">
         <div class="card-body">
             <h6 class="">Laporan Aktifitas</h6>
             <select class="card btn mb-1">

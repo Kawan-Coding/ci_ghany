@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class Admin extends CI_Controller
+{
 	protected $template = array(
 		'sidebar' => 'component/ap_sidebar',
 		'navbar_header' => 'component/ap_navbar_header',
@@ -26,13 +27,30 @@ class Admin extends CI_Controller {
 		$data = array(
 			'content' => 'content/ap_dasboard',
 		);
-        $this->load->view('template', array_merge($data,$this->template));
+		$this->load->view('template', array_merge($data, $this->template));
 	}
+
 	public function profil_admin()
 	{
 		$data = array(
 			'content' => 'content/ap_profil_admin',
 		);
-        $this->load->view('template', array_merge($data,$this->template));
+		$this->load->view('template', array_merge($data, $this->template));
+	}
+
+	public function add_account()
+	{
+		$data = array(
+			'content' => 'content/ap_add_account',
+		);
+		$this->load->view('template', array_merge($data, $this->template));
+	}
+
+	public function account()
+	{
+		$data = array(
+			'content' => 'content/ap_account',
+		);
+		$this->load->view('template', array_merge($data, $this->template));
 	}
 }
