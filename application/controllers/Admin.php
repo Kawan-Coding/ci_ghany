@@ -2,7 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
-
+	protected $template = array(
+		'sidebar' => 'component/sidebar',
+		'navbar_header' => 'component/navbar_header',
+	);
 	/**
 	 * Index Page for this controller.
 	 *
@@ -22,9 +25,14 @@ class Admin extends CI_Controller {
 	{
 		$data = array(
 			'content' => 'content/dasboard',
-			'sidebar' => 'component/sidebar',
-			'navbar_header' => 'component/navbar_header',
-        );
-        $this->load->view('template', $data);
+		);
+        $this->load->view('template', array_merge($data,$this->template));
+	}
+	public function profil_admin()
+	{
+		$data = array(
+			'content' => 'content/profil_admin',
+		);
+        $this->load->view('template', array_merge($data,$this->template));
 	}
 }
