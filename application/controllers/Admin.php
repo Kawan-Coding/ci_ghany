@@ -20,6 +20,11 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('template');
+		$data = array(
+			'content' => 'content/dasboard',
+			'sidebar' => 'component/sidebar',
+			'navbar_header' => 'component/navbar_header',
+        );
+        $this->load->view('template', $data);
 	}
 }
