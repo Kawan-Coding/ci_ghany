@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-<div class="card-body">
+<div class="card-body" id="data_account">
     <h5 class="card-title">TAMBAH PENGGUNA</h5>
     <div class="dropdown-divider"></div>
     <div class="shadow-sm btn-lg" id="choose_unit">
@@ -35,28 +35,110 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
 </div>
 
+<div class="card-body" id="detail_account">
+    <div class="justify-content-between align-items-center d-flex">
+        <h5 class="card-title d-inline">DETAIL DATA PENGGUNA</h5>
+        <button class="btn-danger btn rounded-circle "> X </button>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div class="row">
+        <div class="col-4">
+            <div class="shadow-sm bgprofil h-100 d-flex align-items-center justify-content-center btn-lg">
+                <img class="rounded-circle w-50 h-50 img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card-body shadow-sm btn-lg">
+                <p class="h6">Nama</p>
+                <p class="text-danger mt-n1 mb-3 h5">Ariel Tatum</p>
+                <p class="h6">Posisi</p>
+                <p class="text-danger mt-n1 mb-3 h5">Admin Pusat IT</p>
+                <p class="h6">Status</p>
+                <p class="text-danger mt-n1 mb-3 h5">Aktif</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="h6">Username</p>
+        <p id="username" class="mt-n1 mb-3 h5">Ariel_tatum</p>
+        <p class="h6">Password</p>
+        <p id="password" class="mt-n1 mb-3 h5">Admin Pusat IT</p>
+        <p class="h6">Email</p>
+        <p id="email" class="mt-n1 mb-3 h5">arieltatum@gmail.com</p>
+        <p class="h6">No. Telepon</p>
+        <p id="telepon" class="mt-n1 mb-3 h5">082164028264</p>
+    </div>
+</div>
+
+<div class="card-body" id="edit_account">
+    <div class="justify-content-between align-items-center d-flex">
+        <h5 class="card-title d-inline">EDIT DATA PENGGUNA</h5>
+        <button class="btn-danger btn rounded-circle "> X </button>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div class="row">
+        <div class="col-4">
+            <div class="shadow-sm bgprofil h-100 d-flex align-items-center justify-content-center btn-lg">
+                <img class="rounded-circle w-50 h-50 img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card-body shadow-sm btn-lg">
+                <div class="text-white row justify-content-between">
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input control" id="inputGroupFile04">
+                            <label class="custom-file-label rounded-pill" for="inputGroupFile04">Pilih file foto anda</label>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-success" type="button">Upload</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="h6">Nama</p>
+        <p class="text-danger mt-n1 mb-3 h5">Ariel Tatum</p>
+        <p class="h6">Posisi</p>
+        <p class="text-danger mt-n1 mb-3 h5">Admin Pusat IT</p>
+        <p class="h6">Status</p>
+        <p class="text-danger mt-n1 mb-3 h5">Aktif</p>
+        <p class="h6">Username</p>
+        <p id="username" class="mt-n1 mb-3 h5">Ariel_tatum</p>
+        <p class="h6">Password</p>
+        <p id="password" class="mt-n1 mb-3 h5">Admin Pusat IT</p>
+        <p class="h6">Email</p>
+        <p id="email" class="mt-n1 mb-3 h5">arieltatum@gmail.com</p>
+        <p class="h6">No. Telepon</p>
+        <p id="telepon" class="mt-n1 mb-3 h5">082164028264</p>
+    </div>
+</div>
+
 <script>
-    var data = [
-        [
-            "Tiger Nixon",
-            "<span class='btn btn-success'>Detail</span> <span class='btn btn-orange'>Edit</span> <span class='btn btn-danger'>Delete</span>",
-        ]
-    ];
-    $(document).ready(function() {
-        $('#data_table').DataTable({
-            "autoWidth": false,
-            "columnDefs": [{
-                    "width": "70vw",
-                    "targets": 0
-                },
-                {
-                    "width": "30vw",
-                    "targets": 1,
-                    "className": "dt-center"
-                }
-            ],
-            "paging": false,
-            data: data
-        });
+var data = [
+    [
+        "Tiger Nixon",
+        "<span class='btn btn-success'>Detail</span> <span class='btn btn-orange'>Edit</span> <span class='btn btn-danger'>Delete</span>",
+    ]
+];
+$(document).ready(function() {
+    $('#data_table').DataTable({
+        "autoWidth": false,
+        "columnDefs": [{
+                "width": "70vw",
+                "targets": 0
+            },
+            {
+                "width": "30vw",
+                "targets": 1,
+                "className": "dt-center"
+            }
+        ],
+        "paging": false,
+        data: data
     });
+});
 </script>

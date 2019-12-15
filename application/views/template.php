@@ -19,7 +19,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<script type="text/javascript" src="<?= base_url('assets/js/canvas/canvas.js') ?>"></script>
 </head>
 
-<body>
+<body style="overflow-x:hidden">
 	<?php
 	$this->load->view($navbar_header);
 	?>
