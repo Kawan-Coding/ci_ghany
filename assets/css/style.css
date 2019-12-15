@@ -84,6 +84,12 @@ form input {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(79, 144, 2, 1) 50%);
 }
 
-.img-cover{
+.img-cover {
     object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.custom-file-label::after {
+    display: none;
 }

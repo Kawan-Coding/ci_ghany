@@ -44,7 +44,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <div class="row">
         <div class="col-4">
             <div class="shadow-sm bgprofil h-100 d-flex align-items-center justify-content-center btn-lg">
-                <img class="rounded-circle w-50 h-50 img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
+                <img class="rounded-circle img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
             </div>
         </div>
         <div class="col-8">
@@ -79,19 +79,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <div class="row">
         <div class="col-4">
             <div class="shadow-sm bgprofil h-100 d-flex align-items-center justify-content-center btn-lg">
-                <img class="rounded-circle w-50 h-50 img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
+                <img class="rounded-circle img-cover" src="<?= base_url() ?>assets/img/aaa.jpg">
             </div>
         </div>
         <div class="col-8">
             <div class="card-body shadow-sm btn-lg">
-                <div class="text-white row justify-content-between">
+                <div class="card-body row justify-content-between">
+                    <p class="h5">Silahkan upload foto</p>
                     <div class="input-group">
-                        <div class="custom-file">
+                        <div class="custom-file mr-4">
                             <input type="file" class="custom-file-input control" id="inputGroupFile04">
-                            <label class="custom-file-label rounded-pill" for="inputGroupFile04">Pilih file foto anda</label>
+                            <label class="custom-file-label rounded-pill" for="inputGroupFile04">Pilih file foto
+                                anda</label>
                         </div>
                         <div class="">
-                            <button class="btn btn-success" type="button">Upload</button>
+                            <button class="btn btn-success px-4" type="button">Upload</button>
                         </div>
                     </div>
 
@@ -101,11 +103,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
     <div class="card-body">
         <p class="h6">Nama</p>
-        <p class="text-danger mt-n1 mb-3 h5">Ariel Tatum</p>
+        <p class="mt-n1 mb-3 h5">Ariel Tatum</p>
         <p class="h6">Posisi</p>
-        <p class="text-danger mt-n1 mb-3 h5">Admin Pusat IT</p>
+        <p class="mt-n1 mb-3 h5">Admin Pusat IT</p>
         <p class="h6">Status</p>
-        <p class="text-danger mt-n1 mb-3 h5">Aktif</p>
+        <p class="mt-n1 mb-3 h5">Aktif</p>
         <p class="h6">Username</p>
         <p id="username" class="mt-n1 mb-3 h5">Ariel_tatum</p>
         <p class="h6">Password</p>
