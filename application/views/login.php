@@ -13,7 +13,7 @@
         <div class="col col-lg-3"></div>
         <div class="col col-lg-6">
             <div class="card border rounded shadow-sm" style="width: 80%;height: 604px;margin-top: 10%;margin-right: 7%;margin-left: 10%;opacity: 1;background-color: rgba(86,86,84,0.62);color: #212529;">
-                <div class="card-body" style="padding: 67px;opacity: 1;"><img style="width: auto;min-height: auto;height: 7em;" src="<?= base_url() ?>assets/img/login/logo_RSUD_Login.png">
+                <div class="card-body" style="padding: 67px;opacity: 1;"><img class="" style="width: auto;min-height: auto;height: 7em;" src="<?= base_url() ?>assets/img/login/logo_RSUD_Login.png">
                     <div class="row rounded" style="background-color: #ffffff;margin-right: 0px;margin-left: 0px;height: 62px;margin-top: 16px;">
                         <div class="col-xl-1" style="padding-right: 0px;padding-left: 7px;"><img class="float-left d-xl-flex" src="<?= base_url() ?>assets/img/login/login.png" style="width: 51px;padding-top: 4px;padding-right: -2px;margin: 0px;margin-right: 0px;margin-top: 2px;"></div>
                         <div class="col-xl-10" style="padding-left: 30px;"><input type="text" class="inputrounded" style="width: 100%;height: 43px;margin-top: 8px;" placeholder="USERNAME"></div>
