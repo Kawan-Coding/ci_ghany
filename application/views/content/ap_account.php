@@ -35,10 +35,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="card-body" id="detail_account">
+<div class="card-body" id="detail_account" style="display:none">
     <div class="justify-content-between align-items-center d-flex">
         <h5 class="card-title d-inline">DETAIL DATA PENGGUNA</h5>
-        <button class="btn-danger btn rounded-circle "> X </button>
+        <button class="btn-danger btn rounded-circle click"> X </button>
     </div>
     <div class="dropdown-divider"></div>
     <div class="row">
@@ -70,10 +70,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
 </div>
 
-<div class="card-body" id="edit_account">
+<div class="card-body" id="edit_account" style="display:none">
     <div class="justify-content-between align-items-center d-flex">
         <h5 class="card-title d-inline">EDIT DATA PENGGUNA</h5>
-        <button class="btn-danger btn rounded-circle "> X </button>
+        <button class="btn-danger btn rounded-circle click"> X </button>
     </div>
     <div class="dropdown-divider"></div>
     <div class="row">
@@ -123,12 +123,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 var data = [
     [
         "Tiger Nixon",
-        "<span class='btn btn-success'>Detail</span> <span class='btn btn-orange'>Edit</span> <span class='btn btn-danger'>Delete</span>",
+        "<span class='btn btn-success' onclick='view()'>Detail</span> <span class='btn btn-orange' onclick='edit()'>Edit</span> <span class='btn btn-danger' onclick='del()'>Delete</span>",
     ]
 ];
 $(document).ready(function() {
     $('#data_table').DataTable({
         "autoWidth": false,
+        "ordering": false,
         "columnDefs": [{
                 "width": "70vw",
                 "targets": 0
@@ -142,5 +143,35 @@ $(document).ready(function() {
         "paging": false,
         data: data
     });
+});
+
+function view() {
+    $("#data_account").hide("slow");
+    $("#detail_account").show("slow");
+}
+
+function edit() {
+    $("#data_account").hide("slow");
+    $("#edit_account").show("slow");
+}
+
+function del() {
+    confirm.fire({
+        title: 'Apakah kamu yakin ?',
+        text: 'Anda akan menghapus data pengguna',
+        icon: 'warning',
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((confirmation) => {
+        if (confirmation.value) {
+            sa_notif('warning', "lalala yeyeye");
+        }
+    })
+
+}
+
+$(".click").click(function() {
+    $(this).parent().parent().hide("slow");
+    $("#data_account").show("slow");
 });
 </script>
