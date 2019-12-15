@@ -58,6 +58,7 @@ class Master extends CI_Model
      */
     public function get_all($tabel, $where = '',$order='',$select='',$like='',$array=TRUE,$group='')
     {
+        echo "jalan";
         // array('create_at','DESC')
         if ($where != '') {
             $this->db->where($where);
