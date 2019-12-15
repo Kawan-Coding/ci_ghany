@@ -64,4 +64,8 @@ class Admin extends CI_Controller
 	{
         $this->load->view('login');
 	}
+	public function welcome()
+	{
+        $this->load->view('ap_setelah_login');
+	}
 }
